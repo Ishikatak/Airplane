@@ -1,0 +1,8 @@
+{
+  "doctype": "DocType",
+  "name": "Flight Passenger",
+  "fields": [
+    {"fieldname": "flight", "fieldtype": "Link", "label": "Flight", "options": "Flight"},
+    {"fieldname": "passenger", "fieldtype": "Link", "label": "Passenger", "options": "Passenger"}
+  ]
+}

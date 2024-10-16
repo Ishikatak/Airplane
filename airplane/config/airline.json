@@ -1,0 +1,8 @@
+{
+  "doctype": "DocType",
+  "name": "Airline",
+  "fields": [
+    {"fieldname": "name", "fieldtype": "Data", "label": "Name"},
+    {"fieldname": "country", "fieldtype": "Data", "label": "Country"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "doctype": "DocType",
+  "name": "Airplane Ticket",
+  "fields": [
+    {"fieldname": "ticket_number", "fieldtype": "Data", "label": "Ticket Number"},
+    {"fieldname": "passenger_name", "fieldtype": "Data", "label": "Passenger Name"},
+    {"fieldname": "flight", "fieldtype": "Link", "label": "Flight", "options": "Flight"}
+  ]
+}

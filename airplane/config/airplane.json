@@ -1,0 +1,8 @@
+{
+  "doctype": "DocType",
+  "name": "Airplane Passenger",
+  "fields": [
+    {"fieldname": "name", "fieldtype": "Data", "label": "Passenger Name"},
+    {"fieldname": "age", "fieldtype": "Int", "label": "Passenger Age"}
+  ]
+}
