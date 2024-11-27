@@ -2,7 +2,7 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "format:{airplane}-{MM}-{YYYY}",
+ "autoname": "format:{airplane}-{MM}-{YYYY}-{#####}",
  "creation": "2024-09-24 12:42:25.489678",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -23,7 +23,10 @@
   "time_of_departure",
   "is_published",
   "route",
-  "amended_from"
+  "amended_from",
+  "crew_member_section",
+  "table_oqjt",
+  "gate_number"
  ],
  "fields": [
   {
@@ -130,6 +133,21 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "crew_member_section",
+   "fieldtype": "Section Break",
+   "label": "Crew Member"
+  },
+  {
+   "fieldname": "table_oqjt",
+   "fieldtype": "Table",
+   "options": "Flight Crew"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
   }
  ],
  "has_web_view": 1,
@@ -142,7 +160,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-10-01 21:22:05.688262",
+ "modified": "2024-11-11 16:54:46.618474",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Flight",
@@ -160,6 +178,48 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Travel Agent",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
+   "share": 1
   }
  ],
  "route": "airplane",

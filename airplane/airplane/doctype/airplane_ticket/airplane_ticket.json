@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{flight}-{source_airport_code}-{destination_airport_code}",
+ "autoname": "format:{flight}-{MM}-{YYYY}-{####}-{source_airport_code}-{destination_airport_code}",
  "creation": "2024-09-29 11:00:59.571699",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,6 +13,7 @@
   "flight",
   "destination_airport_code",
   "seat",
+  "gate_number",
   "section_break_ycux",
   "add_ons",
   "flight_price",
@@ -127,12 +128,18 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "options": "Airplane Ticket"
+  },
+  {
+   "fetch_from": "flight.gate_number",
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-01 19:36:12.505825",
+ "modified": "2024-11-06 12:13:07.234073",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Ticket",
@@ -148,6 +155,41 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Travel Agent",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
    "share": 1,
    "write": 1
   }

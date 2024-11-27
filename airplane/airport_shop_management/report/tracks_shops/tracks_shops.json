@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-11-22 21:41:32.075674",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-11-22 22:14:26.812371",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Tracks Shops",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    airport,\n    COUNT(CASE WHEN status = 'available' THEN 1 END) AS Available_Shops,\n    COUNT(CASE WHEN status = 'occupied' THEN 1 END) AS Occupied_Shops\nFROM \n    `tabAirport shops information`\nGROUP BY \n    airport;\n\n\n\n",
+ "ref_doctype": "Airport shops information",
+ "report_name": "Tracks Shops",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

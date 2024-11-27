@@ -9,7 +9,8 @@
  "field_order": [
   "founding_year",
   "customer_care",
-  "headquarters"
+  "headquarters",
+  "website"
  ],
  "fields": [
   {
@@ -31,6 +32,12 @@
    "in_list_view": 1,
    "label": "Headquarters ",
    "reqd": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -40,26 +47,13 @@
    "link_fieldname": "Airline"
   }
  ],
- "modified": "2024-09-16 17:55:48.182882",
+ "modified": "2024-11-06 17:45:54.318890",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airline",
  "naming_rule": "Set by user",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
